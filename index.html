@@ -14,12 +14,23 @@
   <style>
     body { font-family: 'Inter', sans-serif; }
   </style>
+
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease-in forwards;
+    }
+  </style>
+
 </head>
 <body class="bg-white text-gray-900">
 
   <!-- Hero Section -->
   <header class="relative bg-gradient-to-br from-[#F0F4FF] to-white py-20 text-center px-6">
-    <div class="max-w-3xl mx-auto relative z-10 transition-opacity duration-700 ease-in opacity-0 animate-fade-in">
+    <div class="max-w-3xl mx-auto relative z-10 transition-opacity duration-700 ease-in opacity-0 animate-fade-in transition-opacity duration-700 ease-in">
       <img src="Fiduct_Logo.svg" alt="Fiduct logo" class="h-60 mx-auto mb-8" />
       <h1 class="text-4xl sm:text-5xl font-bold text-gray-900">Launch Fintech Globally – Without Rebuilding Compliance</h1>
       <p class="mt-4 text-lg text-gray-700">Fiduct simplifies global KYC, compliance, and payouts. One API. Any provider. No compliance drag.</p>
